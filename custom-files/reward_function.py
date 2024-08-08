@@ -71,5 +71,5 @@ def reward_function(params):
         reward += 10.0
     # Penalize if the car cannot finish the track in less than benchmark_steps
     elif (steps % 50) == 0 and progress < (steps / benchmark_steps) * 100 :
-    #     reward-=5.0
+        reward-=5.0
     return reward
